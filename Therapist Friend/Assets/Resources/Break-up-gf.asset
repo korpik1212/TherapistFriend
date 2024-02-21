@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56bc9523c77c49743a6e51ef28d9da77, type: 3}
+  m_Name: Break-up-gf
+  m_EditorClassIdentifier: 
+  question:
+  - dialogueText: Hey bro
+  - dialogueText: Should I break up with my gf?
+  - dialogueText: What do you think?
+  answers:
+  - answer: Yes you should marry me instead
+    replyBack:
+    - dialogueText: ewww no
+  - answer: NO you were made for each other
+    replyBack:
+    - dialogueText: Thanks man youre right

@@ -1,18 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class AppObject : MonoBehaviour
+using UnityEngine.EventSystems;
+using DG.Tweening;
+using UnityEngine.UI;
+public class AppObject : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    // Start is called before the first frame update
-    void Start()
+
+
+
+
+
+
+
+
+
+
+
+
+    public virtual void OpenApp()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void CloseApp()
     {
-        
+
+    }
+
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        OpenApp();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        transform.DOScale(1.2f, 0.2f);
+
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        transform.DOScale(1f, 0.2f);
+
     }
 }
